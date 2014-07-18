@@ -1,0 +1,121 @@
+<html>
+  <head>
+    <title>Test-First Teaching: ruby-for-artists: learn_ruby</title>
+    <link href="assets/style.css" media="screen" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div class="header">
+      <h1><a href="http://testfirst.org">TestFirst.org</a></h1>
+      <h2>the home of test-first teaching</h2>
+    </div>
+    <div class="nav">
+      <h2><a href="index.html">ruby-for-artists</a></h2>
+      <b>Labs:</b>
+      <ul>
+        <li><a href="00_hello/index.html">00 Hello</a></li>
+        <li><a href="01_temperature/index.html">01 Temperature</a></li>
+        <li><a href="02_calculator/index.html">02 Calculator</a></li>
+        <li><a href="03_simon_says/index.html">03 Simon Says</a></li>
+        <li><a href="04_pig_latin/index.html">04 Pig Latin</a></li>
+        <li><a href="05_silly_blocks/index.html">05 Silly Blocks</a></li>
+        <li><a href="06_performance_monitor/index.html">06 Performance Monitor</a></li>
+        <li><a href="07_hello_friend/index.html">07 Hello Friend</a></li>
+        <li><a href="08_book_titles/index.html">08 Book Titles</a></li>
+        <li><a href="09_timer/index.html">09 Timer</a></li>
+        <li><a href="10_temperature_object/index.html">10 Temperature Object</a></li>
+        <li><a href="11_dictionary/index.html">11 Dictionary</a></li>
+        <li><a href="12_rpn_calculator/index.html">12 Rpn Calculator</a></li>
+        <li><a href="13_xml_document/index.html">13 Xml Document</a></li>
+        <li><a href="14_array_extensions/index.html">14 Array Extensions</a></li>
+        <li><a href="15_in_words/index.html">15 In Words</a></li>
+      </ul>
+    </div>
+    <h1>learn_ruby</h1>
+    <div class="content"><h1>Notas para el profesor</h1>
+
+<h1># Diapositivas</h1>
+
+<p>Algunas diapositivas están en test-first-teaching/ruby_notes. Están todas en formato Markdown + Showoff, lo que significa que deben ser ya utilizables, ya sea como diapositivas:</p>
+
+<p>     ruby_notes cd
+     ruby_notes showoff</p>
+
+<p>o como HTML plano</p>
+
+<p>     ruby_notes cd
+     rdiscount *. md> index.html</p>
+
+<h1># Reglas de Oro (para los estudiantes)</h1>
+
+<ul>
+<li>Lea siempre el error!</li>
+</ul>
+
+
+<h1># Soluciones</h1>
+
+<p>¡ La rama <code>soluciones</code> ha muerto !; ¡ Viva el directorio <code>solución</code> !.</p>
+
+<p>Para agregar una solución, debe poner a su archivo de Ruby una (s) y hacerlo en un directorio <strong> </strong> que este dentro del directorio del laboratorio que tenga el nombre de la solución <code>`, por ejemplo,</code>learn_ruby / hola / solución / hello.rb`.</p>
+
+<p>Las soluciones sólo aparecen en el repositorio "master" (<code>Formacion Primero-Test</code>). No informa del estudiante generado (<code>learn_ruby</code>). Cuando ejecuta <code>rake</code> las pruebas se ejecutan a las soluciones, para asegurar que el código es correcto.</p>
+
+<p>Asegúrese de no verificar en cualquier "cosa" en el directorio del laboratorio, ya que se verá por (y seguramente se copiara) los estudiantes.</p>
+
+<p>Múltiples soluciones aún no están soportadas.</p>
+
+<h1># Notas e instrucciones</h1>
+
+<p>Cada laboratorio tiene (o puede tener) un archivo <code>index.md</code> que los estudiantes pueden leer. Este es un buen lugar para el fondo, instrucciones y sugerencias para la resolución de los ejercicios.</p>
+
+<p>Los archivos que terminan en <code>.</code> Md (Markdown) se convierten a HTML y se les da a. HTML sufijo <code>`, y archivos que terminan en</code>. Scss<code>(Sass / SCSS) se convierten en CSS y se les da un</code>. Css sufijo`. Los demás archivos se copian en el repositorio estudiante como es.</p>
+
+<p>Los directorios de los laboratorio se vuelven numerados; por ejemplo <code>hello</code> será <code>00_hello</code>.</p>
+
+<p>Cada plan de estudios contiene un directorio <code>activo</code>, que es un buen lugar para poner los archivos compartidos como los <code>js, los css y las imágenes</code>. Puede hacer referencia a ellos utilizando <code>..</code> en sus archivos en subdirectorios, por ejemplo,</p>
+
+<p>     ! [logo] (.. / assets / logo.gif)</p>
+
+<p>Funciona también en "modo vista previa" , aunque es un poco extraño, ya que <code>.scss</code> no se convierte en <code>.css</code> hasta que el curso se construye utilizando <code>rake build</code>.</p>
+
+<p>También hay un directorio <code>ubicuitus</code>, cuyo contenido se copia en todas las formaciones y en cada directorio de laboratorio generado.</p>
+
+<h1># Trucos</h1>
+
+<p>Estos son algunos buenos ajustes de configuración de git:</p>
+
+<p>     git config --global alias.st status
+     git config --global alias.ci commit
+     git config --global alias.co checkout
+     git config --global alias.br branch
+     git config --global alias.unadd "reset HEAD"
+     git config --global alias.l "log --oneline --decorate --graph"</p>
+
+<pre><code> git config --global push.default matching
+
+ git config --global color.branch=auto
+ git config --global color.diff=auto
+ git config --global color.interactive=auto
+ git config --global color.status=auto 
+</code></pre>
+
+<p>O bien, puede editar <code>$ HOME / .gitconfig</code> - usted debe tener secciones como esto:</p>
+
+<p>     [color]
+        branch = auto
+        diff = auto
+        interactive = auto
+        status = auto
+     [alias]
+        st = status
+        ci = commit
+        co = checkout
+        br = branch
+        unadd = reset HEAD
+        l = log --oneline --decorate --graph
+     [push]
+        default = matching</p>
+</div>
+    <div class="footer"><a href="http://testfirst.org">TestFirst.org</a></div>
+  </body>
+</html>

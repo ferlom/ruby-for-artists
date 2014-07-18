@@ -1,0 +1,226 @@
+<html>
+  <head>
+    <title>Test-First Teaching: ruby-for-artists: learn_ruby</title>
+    <link href="assets/style.css" media="screen" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div class="header">
+      <h1><a href="http://testfirst.org">TestFirst.org</a></h1>
+      <h2>the home of test-first teaching</h2>
+    </div>
+    <div class="nav">
+      <h2><a href="index.html">ruby-for-artists</a></h2>
+      <b>Labs:</b>
+      <ul>
+        <li><a href="00_hello/index.html">00 Hello</a></li>
+        <li><a href="01_temperature/index.html">01 Temperature</a></li>
+        <li><a href="02_calculator/index.html">02 Calculator</a></li>
+        <li><a href="03_simon_says/index.html">03 Simon Says</a></li>
+        <li><a href="04_pig_latin/index.html">04 Pig Latin</a></li>
+        <li><a href="05_silly_blocks/index.html">05 Silly Blocks</a></li>
+        <li><a href="06_performance_monitor/index.html">06 Performance Monitor</a></li>
+        <li><a href="07_hello_friend/index.html">07 Hello Friend</a></li>
+        <li><a href="08_book_titles/index.html">08 Book Titles</a></li>
+        <li><a href="09_timer/index.html">09 Timer</a></li>
+        <li><a href="10_temperature_object/index.html">10 Temperature Object</a></li>
+        <li><a href="11_dictionary/index.html">11 Dictionary</a></li>
+        <li><a href="12_rpn_calculator/index.html">12 Rpn Calculator</a></li>
+        <li><a href="13_xml_document/index.html">13 Xml Document</a></li>
+        <li><a href="14_array_extensions/index.html">14 Array Extensions</a></li>
+        <li><a href="15_in_words/index.html">15 In Words</a></li>
+      </ul>
+    </div>
+    <h1>learn_ruby</h1>
+    <div class="content"><h1>Aprenda Rubí Primero-Test</h1>
+
+<h1># Configuración</h1>
+
+<ul>
+<li>Instalación de Ruby</li>
+</ul>
+
+
+<p>   * Usted contará con Ruby, RubyGems y RSpec para aprender Ruby.
+   * Se recomienda utilizar [RVM] (http://rvm.beginrescueend.com), pero se puede utilizar cualquier version que desea. Nos apoyamos oficialmente en Ruby 1.9 pero probablemente trabajaremos con 1.8.7 también.
+   * He aquí algunas instrucciones correctas[] (http://www.wiki.devchix.com/index.php?title=Workshop_Installation_Notes_Rails_3) para instalar el software necesario.
+   * Estas son algunas [otras buenas instrucciones] (http://ruby.railstutorial.org/ruby-on-rails-tutorial-book # sec: RubyGems), y utilizando RVM.</p>
+
+<ul>
+<li><p>Abra una ventana del terminal. (En Mac OS X puede utilizar la app <code>Terminal</code>.)</p></li>
+<li><p>Instale RSpec</p></li>
+</ul>
+
+
+<p>         gem install rspec</p>
+
+<ul>
+<li>Introduzca el directorio del curso. (Ese es el mismo directorio que el archivo index.html `` es publico)</li>
+</ul>
+
+
+<p>         learn_ruby cd</p>
+
+<ul>
+<li>Introduzca el 00_hello `laboratorio '.</li>
+</ul>
+
+
+<p>         00_hello cd</p>
+
+<ul>
+<li>Abra [index.html] (./00_hello/index.html) Archivo del laboratorio en un explorador web y siga las instrucciones allí.</li>
+</ul>
+
+
+<p>         abierto index.html # esto sólo funciona en Mac OS X!</p>
+
+<h1># El uso de estos ejercicios</h1>
+
+<p>Su directorio de cursos tiene una lista de directorios de laboratorios. Cada
+directorio tiene un archivo "spec". Vd. tendrá que escribir todo el código necesario para hacer que pase todas las especificaciones.</p>
+
+<p>Para conseguir implicarse en este proceso, vaya al "hola" de laboratorio con <code>cd
+00_hello</code>y lea las instrucciones detalladas en su archivo<code>index.html</code>.</p>
+
+<p>Si ha llegado a través de "hola", ¡felicidades! Ahora es el momento de ir al iguiente directorio (cuyo nombre comienza con <code>01_</code>) y comenzar a aprender Ruby!</p>
+
+<h1># Resumen del Curso</h1>
+
+<p>Cada curso es diferente, así que consulte con su instructor para obtener detalles sobre el Sylabus que él o ella hayan elegido. Aquí está un examen de algunos de los laboratorios:</p>
+
+<p>Hola <em><strong> </strong>
+   Te da una idea básica de cómo utilizar estas pruebas.
+   Véase [00_hello/index.html] (00_hello/index.html) para obtener instrucciones mas detalladas.
+</em><strong> Temperatura </strong>
+   Escribir clases y hacer algo de matemáticas básicas.
+<em><strong> Calculadora </strong> introduce un poco más de matemáticas, y usted tendrá que repetirlas.
+</em><strong> Cerdo \ _latin </strong> permite manipular cadenas en un lenguaje imaginario.
+<em><strong> En \ _words </strong> pide un número para decir sí en Inglés. Extiende una clase incorporada del lenguaje. Al final, vamos a usar los condicionales, matrices de iteración, y tal vez incluso un poco de recursividad.
+</em><strong> Bloques </strong> introduce sintaxis de bloques incluyendo <code>rendimiento</code></p>
+
+<h1>Configuración avanzada</h1>
+
+<p>Después de coger el ritmo de las cosas, Vd. podrá leer sobre técnicas avanzadas de configuración [] (advanced_setup.html) como se "tira" de los cambios y se bifurcan. Pero no te preocupes por eso, al principio.</p>
+
+<h1>Problemas? ¿Preguntas?</h1>
+
+<p>En primer lugar, preguntele a su compañero. Luego, pida ayuda a su instructor.</p>
+
+<p>Luego, pídale ayuda a Google (en serio). Si hay un error, intente copiar la cadena del error/es y pegarlo en un cuadro de búsqueda [de Google] (http://google.com). Si eso no ayuda, haga una búsqueda en uno de estos sitios:</p>
+
+<ul>
+<li><a href="http://stackoverflow.com/">http://stackoverflow.com/</a></li>
+<li><a href="http://www.ruby-forum.com">http://www.ruby-forum.com</a></li>
+</ul>
+
+
+<p>También puede encontrar ayuda en el sitio [TestFirst.org] (http://testfirst.org) o [Lista de Enseñanza de mail de Enseñanza "Primero los Test"] (http://groups.google.com/group/test-first-teaching ).</p>
+
+<p>Y hay muchas conferencias relacionadas, notas y videos que están en <a href="http://CodeLikeThis.com">http://CodeLikeThis.com</a>.</p>
+
+<p>Recuerde, si Vd. publica una cuestión técnica en línea, Vd. debe</p>
+
+<ol>
+<li>Incluir números de versión:</li>
+</ol>
+
+
+<p>         $ Ruby-v
+         ruby 1.8.6 (2008-08-11 patchlevel 287) [universal darwin9.0]</p>
+
+<ol>
+<li>Excepción en la que ya ha buscado una respuesta</li>
+<li>Si es posible, incluir fragmentos de código que reproducen el problema de manera aislada</li>
+</ol>
+
+
+<h1>Soluciones y presentaciones</h1>
+
+<p>Este repositorio Github (<code>learn_ruby</code>) es * generado * de un repositorio Github diferente, <a href="http://github.com/ultrasaurus/test-first-teaching">http://github.com/ultrasaurus/test-first-teaching</a>.</p>
+
+<p>Si quieres ver cómo otros estudiantes resolvieron el problema, vaya a la sesión temporal y haga clic. (No estoy proporcionando un enlace directo porque no quiero que sea demasiado fácil de engañar!)</p>
+
+<p>Si desea enviar un parche o una solución, por favor bifurcar el repo [Test-First Docencia] (http://github.com/ultrasaurus/test-first-teaching) y presentar una solicitud de Pull desde ahí.</p>
+
+<p>además,</p>
+
+<h1>Recursos</h1>
+
+<p>Aquí hay un amplio estudio de muchos recursos que pueden serle de utilidad. No trate de leerlos todos! Simplemente navegar alrededor cuando tienes ganas de aprender más acerca de Ruby.</p>
+
+<h1># El aprendizaje de Ruby a través de pruebas (y / o de forma interactiva)</h1>
+
+<ul>
+<li>[Rubí Koans] (http://rubykoans.com) por Jim Weirich y Joe O'Brien (inspirado por [Metakoans] (http://rubyquiz.com/quiz67.html) por ara.t.howard y [Rubí pruebas de aprendizaje] (http://clarkware.com/cgi/blosxom/2005/03/18) de Mike Clark)</li>
+<li>[Test-First Docencia] (http://testfirst.org) por Sarah Allen y Alex Chaffee
+   * [TDD A través de pruebas Primera Enseñanza Aprendizaje] (http://www.youtube.com/watch?v=KgfdlZuVz7I) hablar de Sarah Allen al este de la bahía de Ruby Meetup</li>
+<li>[Growing Software OO En Ruby] (http://www.exampler.com/blog/2009/12/17/growing-object-oriented-software-in-ruby/) por Brian Marick - una versión de Ruby de [Growing Software Orientado a Objetos guiado por pruebas] (http://www.growing-object-oriented-software.com/)</li>
+<li>[Ruby-guerrero] (http://github.com/ryanb/ruby-warrior) por Ryan Bates - un juego escrito en Ruby para el aprendizaje de Ruby</li>
+<li>[Rubí Kickstart] (https://github.com/JoshCheek/ruby-kickstart) por Josh Cheek - otro conjunto de ejercicios de prueba impulsados</li>
+<li>[Intenta Rubí] (http://tryruby.org) ejecuta un intérprete de Ruby en su navegador, con consejos y asesoramiento</li>
+</ul>
+
+
+<h1># Aprendizaje Ruby y Programación</h1>
+
+<ul>
+<li>[Learn To Program] (http://pine.fm/LearnToProgram/) <strong> por Chris Pine </strong> - gran tutorial Ruby, disponible en línea (1st ed.) O en un [libro PragProg] (http://www .pragprog.com/titles/ltp2/learn-to-program-2nd-edition) (2 ª ed.)</li>
+<li>[Rubí Learning] (http://rubylearning.com/satishtalim/tutorial.html) - Tutorial de Rubí</li>
+<li>[Rails para Zombies] (http://railsforzombies.org) - aprender Ruby y Rails en su navegador, sin necesidad de configuración</li>
+<li>[Aprenda Rubí The Hard Way] (http://ruby.learncodethehardway.org/) - una traducción Rubí de Zed Shaw "Aprenda Python The Hard Way"</li>
+<li>[Read Rubí] (http://ruby.runpaint.org/) un libro sobre Ruby, bastante técnico, pero bien escrito. En línea gratuito.</li>
+<li>[Rubí Misión] (http://github.com/alexch/mission)</li>
+<li>[RailsBridge] (http://groups.google.com/group/railsbridge)</li>
+<li>[CS Unplugged] (http://www.csunplugged.org/) - "CS Unplugged ofrece una amplia colección de recursos gratuitos que enseñan los principios de la Informática como números binarios, los algoritmos y la compresión de datos a través de juegos de acoplamiento y rompecabezas que utilizan tarjetas, cuerdas, lápices de colores y un montón de correr. "</li>
+<li>[Diario de Scripting con Ruby] (http://pragprog.com/titles/bmsft/everyday-scripting-with-ruby) por Brian Marick</li>
+<li>[Programación Ruby (El Hacha recogida)] (http://pragprog.com/titles/ruby/programming-ruby) por Dave Thomas</li>
+<li>Guía del usuario de Niza: <a href="http://www.rubyist.net/~slagell/ruby/">http://www.rubyist.net/~slagell/ruby/</a></li>
+<li>[Rails Tutorial] de Michael Hartl (http://railstutorial.org)</li>
+<li><a href="http://ruby4kids.com">http://ruby4kids.com</a></li>
+<li>[Rubí en 100 minutos] (http://jumpstartlab.com/resources/ruby-jumpstart/ruby/) por [Jeff Casimir] (http://jumpstartlab.com)</li>
+<li>[Rubí Universidad mendicante] (http://university.rubymendicant.com)</li>
+<li>Entrenador on Rails [tutorial "Ruby Para Rails"] (http://www.public.traineronrails.com/courses/ruby/)</li>
+<li>["Mis 10 cosas favoritas sobre Ruby"] (http://yehudakatz.com/2009/08/24/my-10-favorite-things-about-the-ruby-language/) por Yehuda Katz</li>
+<li>["Cómo contar"] (http://stevenf.com/pages/book.html) por Steven Frank, vol. 1 en "Programación para los simples mortales", una serie de libros diseñados para introducir los conceptos de la programación desde cero a un lector que nunca ha escrito una línea de código.</li>
+</ul>
+
+
+<h1># Test-Driven Development</h1>
+
+<ul>
+<li>[Test-Driven] (http://www.slideshare.net/alexchaffee/test-driven) - Presentación a cargo de Alex</li>
+</ul>
+
+
+<h1># Online Rubí Referencias</h1>
+
+<ul>
+<li><a href="http://www.ruby-lang.org">http://www.ruby-lang.org</a></li>
+<li><a href="http://www.ruby-doc.org/">http://www.ruby-doc.org/</a></li>
+<li><a href="http://www.gotapi.com/rubyrails">http://www.gotapi.com/rubyrails</a></li>
+<li><a href="http://apidock.com/">http://apidock.com/</a></li>
+</ul>
+
+
+<h1># Otros buenos recursos</h1>
+
+<ul>
+<li><code>Irb</code> - en caso de duda, pruébalo!</li>
+<li>[Ruby Version Manager] (http://rvm.beginrescueend.com/) (también conocido como RVM ``) - gestiona limpiamente múltiples instalaciones de Ruby</li>
+<li><a href="http://www.rubular.com/">http://www.rubular.com/</a> - Una calculadora de expresiones regulares de Ruby en línea</li>
+<li>[Git tutorial] (http://bit.ly/scott-chacon-git-101-tutorial) por Scott Chacon</li>
+</ul>
+
+
+<h1>Créditos</h1>
+
+<ul>
+<li>Conceptos de Alex Chaffee</li>
+<li>Ejercicios de Alex Chaffee, Sarah Allen, Liah Hansen, Kai Middleton</li>
+<li>Principios de Garantía de Calidad por Sumiki, Dimitri, Liah, Michael, y Brendan</li>
+</ul>
+
+</div>
+    <div class="footer"><a href="http://testfirst.org">TestFirst.org</a></div>
+  </body>
+</html>

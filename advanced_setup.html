@@ -1,0 +1,94 @@
+<html>
+  <head>
+    <title>Test-First Teaching: ruby-for-artists: learn_ruby</title>
+    <link href="assets/style.css" media="screen" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div class="header">
+      <h1><a href="http://testfirst.org">TestFirst.org</a></h1>
+      <h2>the home of test-first teaching</h2>
+    </div>
+    <div class="nav">
+      <h2><a href="index.html">ruby-for-artists</a></h2>
+      <b>Labs:</b>
+      <ul>
+        <li><a href="00_hello/index.html">00 Hello</a></li>
+        <li><a href="01_temperature/index.html">01 Temperature</a></li>
+        <li><a href="02_calculator/index.html">02 Calculator</a></li>
+        <li><a href="03_simon_says/index.html">03 Simon Says</a></li>
+        <li><a href="04_pig_latin/index.html">04 Pig Latin</a></li>
+        <li><a href="05_silly_blocks/index.html">05 Silly Blocks</a></li>
+        <li><a href="06_performance_monitor/index.html">06 Performance Monitor</a></li>
+        <li><a href="07_hello_friend/index.html">07 Hello Friend</a></li>
+        <li><a href="08_book_titles/index.html">08 Book Titles</a></li>
+        <li><a href="09_timer/index.html">09 Timer</a></li>
+        <li><a href="10_temperature_object/index.html">10 Temperature Object</a></li>
+        <li><a href="11_dictionary/index.html">11 Dictionary</a></li>
+        <li><a href="12_rpn_calculator/index.html">12 Rpn Calculator</a></li>
+        <li><a href="13_xml_document/index.html">13 Xml Document</a></li>
+        <li><a href="14_array_extensions/index.html">14 Array Extensions</a></li>
+        <li><a href="15_in_words/index.html">15 In Words</a></li>
+      </ul>
+    </div>
+    <h1>learn_ruby</h1>
+    <div class="content"><h1>Configuración avanzada</h1>
+
+<h1># Cambios - Pulling</h1>
+
+<p>Si Vd. ha estado trabajando durante algún tiempo y nota que el repositorio del curso ha cambiado y desea ver el nuevo material:</p>
+
+<ul>
+<li>Ver el "status" y asegurarse de que no tienes nada modificado</li>
+</ul>
+
+
+<p>         git status</p>
+
+<ul>
+<li>Tire de los cambios</li>
+</ul>
+
+
+<p>         origin master git pull</p>
+
+<h1># Forking (no la clonación)</h1>
+
+<p>Para guardar una copia de sus propias soluciones en su propio repositorio GitHub, tendrás que hacer un "Fork" del curso en Github. Esto te dará una nueva "url" de git de su propio "fork", que luego se podrá clonar desde el anterior. Por ejemplo, si su nombre es <code>github lady ha-ha</code>, su comando "clonador" será:</p>
+
+<p>         git clone git :/ / github.com / ladyhaha / learn_ruby.git</p>
+
+<p>Extraer los cambios de este nuevo "repo" es un poco complicado y, probablemente, debería pedir ayuda antes de hacerlo, pero he aquí las instrucciones disponibles:</p>
+
+<ul>
+<li>Agregue una "referencia" al repositorio remoto original:</li>
+</ul>
+
+
+<p>         git remote add Ultrasaurus git :/ / github.com / Ultrasaurus / learn_ruby</p>
+
+<ul>
+<li>Baje el "repo" de la rama principal del repositorio remoto. Esto crearía una rama local llamada <code>Ultrasaurus / master</code></li>
+</ul>
+
+
+<p>         origin master git pull</p>
+
+<ul>
+<li>Ahora puede fusionar la rama <code>master</code> del Ultrasaurus en su rama <code>master</code></li>
+</ul>
+
+
+<p>         Ultrasaurus git merge / master</p>
+
+<ul>
+<li>Por último "push" otra vez a su propia rama <code>master</code> desde su rama <code>origin</code> del repositorio github remoto.</li>
+</ul>
+
+
+<p>         origin master git push</p>
+
+<p>Si Vd. quiere comprender todos estos "conjuros mágicos" de git, puede ver este gran screencast: <a href="http://blip.tv/file/4094854">http://blip.tv/file/4094854</a> (más en <a href="http://www.gitcasts.com">http://www.gitcasts.com</a>)</p>
+</div>
+    <div class="footer"><a href="http://testfirst.org">TestFirst.org</a></div>
+  </body>
+</html>
